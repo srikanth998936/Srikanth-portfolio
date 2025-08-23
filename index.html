@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Srikanth Sadepalli – UI Developer portfolio. Html,css,React, Redux, JavaScript, modern web." />
+    <title>Srikanth | UI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="nav" id="top">
+        <div class="container">
+            <a class="brand" href="#top" aria-label="Go to top">Srikanth <span>• UI Dev</span></a>
+            <nav class="navlinks" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="themeBtn" class="theme-toggle" aria-pressed="false" title="Toggle theme">🌙<span
+                        class="sr-only">Toggle theme</span></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <p class="eyebrow">UI Developer • React • Redux • JavaScript</p>
+                <h1 class="title">Hi, I'm <span class="gradient">Srikanth Sadepalli</span></h1>
+                <p class="lead">I craft performant, accessible, and delightful web apps with React, Redux, and modern
+                    front-end tooling. Currently open to roles.</p>
+
+                <div class="cta">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn ghost">Get In Touch</a>
+                    <span class="chip" id="typing" aria-live="polite"></span>
+                </div>
+            </div>
+            <div style="display:grid; place-items:center;">
+                <div class="avatar" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-sub">Experienced UI Developer with <b>4.9 years</b> building scalable, high-performance web
+            apps. Specialized in React.js, Redux, and modern front-end technologies.</p>
+        <div class="about">
+            <div class="card reveal">
+                <h3>Professional Summary</h3>
+                <ul>
+                    <li>3 years of focused React experience (Hooks, Router, performance).</li>
+                    <li>Reusable component libraries, Storybook, design systems.</li>
+                    <li>Strong state management with Redux & RTK.</li>
+                    <li>SPA architecture, accessibility, and responsive design.</li>
+                    <li>Agile/Scrum, Git, CI/CD basics.</li>
+                </ul>
+            </div>
+            <div class="stats reveal" aria-label="Key metrics">
+                <div class="stat">
+                    <h3>4.9+</h3>
+                    <div>Years Experience</div>
+                </div>
+                <div class="stat">
+                    <h3>2</h3>
+                    <div>Projects</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-sub">A quick snapshot of the tech I use daily.</p>
+        <div class="skills-grid">
+            <div class="card reveal">
+                <h3>Frontend Frameworks</h3>
+                <div class="pillset">
+                    <span class="pill">React.js</span>
+                    <span class="pill">Redux</span>
+                    <span class="pill">React Router</span>
+                    <span class="pill">Hooks</span>
+                </div>
+            </div>
+            <div class="card reveal">
+                <h3>Languages & Markup</h3>
+                <div class="pillset">
+                    <span class="pill">JavaScript (ES6+)</span>
+                    <span class="pill">TypeScript</span>
+                    <span class="pill">HTML5</span>
+                    <span class="pill">CSS3</span>
+                </div>
+            </div>
+            <div class="card reveal">
+                <h3>Styling & UI</h3>
+                <div class="pillset">
+                    <span class="pill">CSS Grid</span>
+                    <span class="pill">Flexbox</span>
+                    <span class="pill">Bootstrap</span>
+                    <span class="pill">Material-UI</span>
+                </div>
+            </div>
+            <div class="card reveal">
+                <h3>Tools & Workflow</h3>
+                <div class="pillset">
+                    <span class="pill">Git</span>
+                    <span class="pill">VS Code</span>
+                    <span class="pill">Webpack</span>
+                    <span class="pill">Agile/Scrum</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">Filter or search to explore. Click a card for details.</p>
+        <div class="toolbar">
+            <input type="search" id="search" placeholder="Search projects... (e.g., React, e-commerce)"
+                aria-label="Search projects" />
+            <button class="filter chip" data-filter="all" aria-pressed="true">All</button>
+
+            <button class="filter chip" data-filter="ecommerce">E-commerce</button>
+            <button class="filter chip" data-filter="dashboard">Dashboard</button>
+
+        </div>
+
+        <div class="grid" id="projectGrid" aria-live="polite">
+            <article class="card project reveal" data-tags="react uiux" tabindex="0">
+                <div class="thumb">Assure AI</div>
+                <h3>Assure AI</h3>
+                <p class="meta">UI Developer • 2020–2022 • React, Redux, MUI, Bootstrap</p>
+                <p>
+                    Assure AI is a web Application for Chartered Accountants it automates the daily tasks performed by
+                    Chartered Accountants.
+                    It aimed at automating and optimizing risk assessment, quality assurance, and compliance
+                    processes.it identifies potential risks
+                    and non-compliance issues, ensuring adherence to regulatory standards and improving overall
+                    decision- making.
+
+                </p>
+            </article>
+            <article class="card project reveal" data-tags="react ecommerce">
+                <div class="thumb">HP Portal</div>
+                <h3>HP Portal</h3>
+                <p class="meta">UI Developer • 2022–2025 • React, Redux, Storybook</p>
+                <p>Developed a dynamic and responsive e-commerce website, "HP Portal," using React Storybook for the
+                    frontend interface and Redux for state management.
+                    The platform enables users to browse products, add items to their cart, and complete purchases
+                    seamlessly,
+                    the website supports user authentication, product search and filtering, as well as order management
+                    functionalities.
+
+                </p>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Have an opportunity or just want to say hi? Drop a message.</p>
+        <form id="contactForm" class="card reveal" novalidate>
+            <label>
+                <span class="sr-only">Your name</span>
+                <input required name="name" placeholder="Your name" />
+            </label>
+            <label>
+                <span class="sr-only">Email</span>
+                <input required type="email" name="email" placeholder="Email" />
+            </label>
+            <label>
+                <span class="sr-only">Message</span>
+                <textarea required name="message" placeholder="Message"></textarea>
+            </label>
+            <div style="display:flex; gap:.6rem; align-items:center;">
+                <button class="btn primary" type="submit">Send Message</button>
+                <span id="formStatus" role="status" aria-live="polite"></span>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container"
+            style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.6rem;">
+            <small>© <span id="year"></span> Srikanth Sadepalli. All rights reserved.</small>
+            <div style="display:flex; gap:.6rem;">
+                <a class="chip" href="#top">Top ↑</a>
+                <a class="chip" href="mailto:srikanths0738@gmail.com">Email</a>
+                <a class="chip" href="tel:+919989365858">Call</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="toTop" class="btn ghost" aria-label="Back to top">↑</button>
+
+    <!-- Modal -->
+    <dialog id="projectModal"
+        style="border:none; border-radius: var(--radius-lg); padding:0; width:min(680px,92%); background:var(--card); color:var(--text);">
+        <form method="dialog" style="margin:0;">
+            <header
+                style="display:flex; justify-content:space-between; align-items:center; padding:1rem 1.1rem; border-bottom:1px solid #ffffff18;">
+                <strong id="modalTitle">Project</strong>
+                <button class="chip" value="close" aria-label="Close">Close</button>
+            </header>
+            <div id="modalBody" style="padding:1rem 1.1rem;"></div>
+            <footer
+                style="padding:1rem 1.1rem; border-top:1px solid #ffffff18; display:flex; gap:.6rem; justify-content:flex-end;">
+                <button class="btn ghost" value="cancel">Close</button>
+            </footer>
+        </form>
+    </dialog>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
